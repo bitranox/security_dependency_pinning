@@ -1,7 +1,7 @@
 # CONF
 
 name = 'security_dependency_pinning'
-title = 'A repository dedicated to maintaining a secure, stable environment by pinning critical library versions to protect against vulnerabilities and ensure compatibility.'
+title = 'A repository dedicated to maintaining a secure, stable environment by pinning critical library versions'
 version = 'v1.0.0'
 url = 'https://github.com/bitranox/security_dependency_pinning'
 author = 'Robert Nowotny'
@@ -14,7 +14,7 @@ def print_info() -> None:
 
 Info for security_dependency_pinning:
 
-    A repository dedicated to maintaining a secure, stable environment by pinning critical library versions to protect against vulnerabilities and ensure compatibility.
+    A repository dedicated to maintaining a secure, stable environment by pinning critical library versions
 
     Version : v1.0.0
     Url     : https://github.com/bitranox/security_dependency_pinning

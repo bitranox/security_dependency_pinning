@@ -139,8 +139,7 @@ Usage from Commandline
    Usage: security_dependency_pinning [OPTIONS] COMMAND [ARGS]...
 
      A repository dedicated to maintaining a secure, stable environment by
-     pinning critical library versions to protect against vulnerabilities and
-     ensure compatibility.
+     pinning critical library versions
 
    Options:
      --version                     Show the version and exit.
@@ -148,7 +147,7 @@ Usage from Commandline
      -h, --help                    Show this message and exit.
 
    Commands:
-     info  get program informations
+     info  get program information
 
 Installation and Upgrade
 ------------------------
