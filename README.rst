@@ -126,10 +126,10 @@ Incorporate the ``security_dependency_pinning`` library into your project's requ
     toml
 
     ## security pinnings
-    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920')
-    pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752')
-    uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522')
-    urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803')
+    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920
+    pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752
+    uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
 
 Usage from Commandline
 ------------------------
@@ -238,10 +238,10 @@ following modules will be automatically installed :
     toml
 
     ## security pinnings
-    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920')
-    pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752')
-    uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522')
-    urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803')
+    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920
+    pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752
+    uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
 
 Acknowledgements
 ----------------
