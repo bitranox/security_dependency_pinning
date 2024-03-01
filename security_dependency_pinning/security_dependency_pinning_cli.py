@@ -59,7 +59,7 @@ def flush_streams() -> None:
 @click.option('--traceback/--no-traceback', is_flag=True, type=bool, default=None, help='return traceback information on cli')
 def cli_main(traceback: Optional[bool] = None) -> None:
     if traceback is not None:
-        cli_exit_tools.config.traceback = traceback
+        pass
     security_dependency_pinning.main()
 
 
