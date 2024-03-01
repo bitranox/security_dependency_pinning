@@ -26,7 +26,7 @@ classifiers = [
 # dependencies - former setup.cfg "install_requires"
 # see: https://setuptools.pypa.io/en/latest/userguide/dependency_management.html
 dependencies = [
-    "certify>=2024.2.2",
+    "certifi>=2024.2.2",
     "click",
     "pip>=24.0",
     "toml",

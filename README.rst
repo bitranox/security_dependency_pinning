@@ -126,7 +126,7 @@ Incorporate the ``security_dependency_pinning`` library into your project's requ
     toml
 
     ## security pinnings
-    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920
+    certifi>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920
     pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752
     uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522
     urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
@@ -238,7 +238,7 @@ following modules will be automatically installed :
     toml
 
     ## security pinnings
-    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920
+    certifi>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920
     pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752
     uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522
     urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
@@ -271,7 +271,7 @@ Changelog
 v1.0.0
 --------
 2024-03-01: Initial release
-    certify>=2024.2.2   # pinned to avoid vulnerability CVE-2023-37920
+    certifi>=2024.2.2   # pinned to avoid vulnerability CVE-2023-37920
     pip>=24.0           # pinned to avoid vulnerability CVE-2023-5752
     uwsgi>=2.0.21       # pinned to avoid vulnerability CVE-2023-27522
     urllib>=2.2.0       # pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
