@@ -117,17 +117,19 @@ repository_slug}}/master?filepath=security_dependency_pinning.ipynb>`_
 Usage
 -----------
 
-- example for including docstrings
+Incorporate the ``security_dependency_pinning`` library into your project's requirements. As a result, the versions of the following libraries will be explicitly specified and maintained:
 
-.. code-block:: text
+.. code-block:: bash
 
-    def main() -> None:
-        """
-        the main method, it does nothing at all
+    ## Project Requirements
+    click
+    toml
 
-        >>> main()
-
-        """
+    ## security pinnings
+    certify>=2024.2.2          # not directly required, pinned to avoid vulnerability CVE-2023-37920')
+    pip>=24.0                  # not directly required, pinned to avoid vulnerability CVE-2023-5752')
+    uwsgi>=2.0.21              # not directly required, pinned to avoid vulnerability CVE-2023-27522')
+    urllib>=2.2.0              # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803')
 
 Usage from Commandline
 ------------------------
