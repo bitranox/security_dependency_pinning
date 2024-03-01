@@ -30,7 +30,7 @@ dependencies = [
     "click",
     "pip>=24.0",
     "toml",
-    "urllib>=2.2.0",
+    "urllib3>=2.2.0",
     "uwsgi>=2.0.21",
 ]
 version = "v1.0.0"
