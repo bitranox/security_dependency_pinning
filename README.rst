@@ -2,7 +2,7 @@ security_dependency_pinning
 ===========================
 
 
-Version v1.0.1 as of 2024-10-01 see `Changelog`_
+Version v1.0.1 as of 2024-10-02 see `Changelog`_
 
 |build_badge| |codeql| |license| |jupyter| |pypi|
 |pypi-downloads| |black| |codecov| |cc_maintain| |cc_issues| |cc_coverage| |snyk|
@@ -126,12 +126,16 @@ Incorporate the ``security_dependency_pinning`` library into your project's requ
     toml
 
     ## security pinnings
-    certifi>=2024.2.2  # not directly required, pinned to avoid vulnerability CVE-2023-37920
-    pip>=24.0          # not directly required, pinned to avoid vulnerability CVE-2023-5752
-    urllib3>=2.2.0     # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
-    ## not available on windows
-    ## not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi>=2.0.21 ; sys_platform != 'win32' and python_version != '3.11' # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    # not directly required, pinned to avoid vulnerability CVE-2023-37920
+    certifi>=2024.2.2
+    # not directly required, pinned to avoid vulnerability CVE-2023-5752
+    pip>=24.0
+    # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
+    urllib3>=2.2.0
+    # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    # uwsgi not available on windows
+    # uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
+    uwsgi>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation != 'CPython'
 
 Usage from Commandline
 ------------------------
@@ -239,12 +243,16 @@ following modules will be automatically installed :
     toml
 
     ## security pinnings
-    certifi>=2024.2.2  # not directly required, pinned to avoid vulnerability CVE-2023-37920
-    pip>=24.0          # not directly required, pinned to avoid vulnerability CVE-2023-5752
-    urllib3>=2.2.0     # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
-    ## not available on windows
-    ## not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi>=2.0.21 ; sys_platform != 'win32' and python_version != '3.11' # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    # not directly required, pinned to avoid vulnerability CVE-2023-37920
+    certifi>=2024.2.2
+    # not directly required, pinned to avoid vulnerability CVE-2023-5752
+    pip>=24.0
+    # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
+    urllib3>=2.2.0
+    # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    # uwsgi not available on windows
+    # uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
+    uwsgi>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation != 'CPython'
 
 Acknowledgements
 ----------------

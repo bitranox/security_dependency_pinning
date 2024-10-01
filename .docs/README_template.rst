@@ -2,7 +2,7 @@ security_dependency_pinning
 ===========================
 
 
-Version v1.0.1 as of 2024-10-01 see `Changelog`_
+Version v1.0.1 as of 2024-10-02 see `Changelog`_
 
 
 .. include:: ./badges.rst
