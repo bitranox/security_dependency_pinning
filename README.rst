@@ -131,7 +131,7 @@ Incorporate the ``security_dependency_pinning`` library into your project's requ
     urllib3>=2.2.0     # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
     ## not available on windows
     ## not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi>=2.0.21 ; sys_platform != 'win32' and python_version != '3.11' # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    uwsgi>=2.0.21 ; sys_platform != 'win32' or python_version != '3.11' # not directly required, pinned to avoid vulnerability CVE-2023-27522
 
 Usage from Commandline
 ------------------------
@@ -244,7 +244,7 @@ following modules will be automatically installed :
     urllib3>=2.2.0     # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
     ## not available on windows
     ## not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi>=2.0.21 ; sys_platform != 'win32' and python_version != '3.11' # not directly required, pinned to avoid vulnerability CVE-2023-27522
+    uwsgi>=2.0.21 ; sys_platform != 'win32' or python_version != '3.11' # not directly required, pinned to avoid vulnerability CVE-2023-27522
 
 Acknowledgements
 ----------------
@@ -275,6 +275,8 @@ v1.0.1
 --------
 2024-10-01:
     - do not import uwsgi on python3.11 because of graalpy 24.1 tests
+    - add graalpy tests
+    - setup python@v5
 
 v1.0.0
 --------
