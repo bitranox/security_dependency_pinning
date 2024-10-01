@@ -5,6 +5,11 @@ Changelog
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
 
+v1.0.1
+--------
+2024-10-01:
+    - do not import uwsgi on python3.11 because of graalpy 24.1 tests
+
 v1.0.0
 --------
 2024-03-01: Initial release

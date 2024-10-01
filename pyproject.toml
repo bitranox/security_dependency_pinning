@@ -31,9 +31,9 @@ dependencies = [
     "pip>=24.0",
     "toml",
     "urllib3>=2.2.0",
-    "uwsgi>=2.0.21 ; sys_platform != 'win32'",
+    "uwsgi>=2.0.21 ; sys_platform != 'win32' and python_version != '3.11'",
 ]
-version = "v1.0.0"
+version = "v1.0.1"
 # seems to be not allowed anymore
 # zip-save = false
 
