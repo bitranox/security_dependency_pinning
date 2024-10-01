@@ -135,7 +135,7 @@ Incorporate the ``security_dependency_pinning`` library into your project's requ
     # not directly required, pinned to avoid vulnerability CVE-2023-27522
     # uwsgi not available on windows
     # uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation != 'CPython'
+    uwsgi>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation == 'CPython'
 
 Usage from Commandline
 ------------------------
@@ -252,7 +252,7 @@ following modules will be automatically installed :
     # not directly required, pinned to avoid vulnerability CVE-2023-27522
     # uwsgi not available on windows
     # uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation != 'CPython'
+    uwsgi>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation == 'CPython'
 
 Acknowledgements
 ----------------
