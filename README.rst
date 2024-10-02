@@ -2,7 +2,7 @@ security_dependency_pinning
 ===========================
 
 
-Version v1.0.1 as of 2024-10-02 see `Changelog`_
+Version v1.0.2 as of 2024-10-02 see `Changelog`_
 
 |build_badge| |codeql| |license| |pypi|
 |pypi-downloads| |black| |codecov| |cc_maintain| |cc_issues| |cc_coverage| |snyk|
@@ -276,7 +276,7 @@ Changelog
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
 
-v1.0.1
+v1.0.2
 --------
 2024-10-01:
     - zipp>=3.19.1

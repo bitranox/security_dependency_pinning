@@ -5,7 +5,7 @@ Changelog
 - new MINOR version for added functionality in a backwards compatible manner
 - new PATCH version for backwards compatible bug fixes
 
-v1.0.1
+v1.0.2
 --------
 2024-10-01:
     - zipp>=3.19.1
