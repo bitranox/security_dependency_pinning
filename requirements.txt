@@ -3,16 +3,14 @@ click
 toml
 ## security pinnings
 # not directly required, pinned to avoid vulnerability CVE-2023-37920
-certifi[security]>=2024.2.2
+certifi>=2024.2.2
 # not directly required, pinned to avoid vulnerability CVE-2023-5752
-pip[security]>=24.0
+pip>=24.0
 # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
-urllib3[security]>=2.2.0
+urllib3>=2.2.0
 # not directly required, pinned to avoid vulnerability CVE-2023-27522
-# uwsgi not available on windows
-# uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
-uwsgi[security]>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation == 'CPython'
-# not directly required, pinned to avoid vulnerability CVE-2023-27522
-zipp[security]>=3.19.1
+uwsgi>=2.0.21 ; sys_platform != 'win32'
+# not directly required, pinned to avoid vulnerability CVE-2024-5569
+zipp>=3.19.1
 # not directly required, pinned to avoid Always-Incorrect Control Flow Implementation
 requests[security]>=2.32.0

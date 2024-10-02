@@ -8,12 +8,11 @@ Changelog
 v1.0.1
 --------
 2024-10-01:
-    - do not import uwsgi on windows and platform implementations other then cpython, for graalpy 24.1 and jupyter
     - zipp>=3.19.1
     - requests>=2.32.0
-    - add graalpy tests
     - setup python@v5
     - codecov token
+    - graalpy and jupyter is not supported because of uwsgi pinning
 
 v1.0.0
 --------

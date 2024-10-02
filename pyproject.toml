@@ -26,14 +26,14 @@ classifiers = [
 # dependencies - former setup.cfg "install_requires"
 # see: https://setuptools.pypa.io/en/latest/userguide/dependency_management.html
 dependencies = [
-    "certifi[security]>=2024.2.2",
+    "certifi>=2024.2.2",
     "click",
-    "pip[security]>=24.0",
+    "pip>=24.0",
     "requests[security]>=2.32.0",
     "toml",
-    "urllib3[security]>=2.2.0",
-    "uwsgi[security]>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation == 'CPython'",
-    "zipp[security]>=3.19.1",
+    "urllib3>=2.2.0",
+    "uwsgi>=2.0.21 ; sys_platform != 'win32'",
+    "zipp>=3.19.1",
 ]
 version = "v1.0.1"
 # seems to be not allowed anymore

@@ -4,7 +4,7 @@ security_dependency_pinning
 
 Version v1.0.1 as of 2024-10-02 see `Changelog`_
 
-|build_badge| |codeql| |license| |jupyter| |pypi|
+|build_badge| |codeql| |license| |pypi|
 |pypi-downloads| |black| |codecov| |cc_maintain| |cc_issues| |cc_coverage| |snyk|
 
 
@@ -87,13 +87,12 @@ automated tests, Github Actions, Documentation, Badges, etc. are managed with `P
 
 Python version required: 3.8.0 or newer
 
-tested on recent linux with python 3.8, 3.9, 3.10, 3.11, 3.12, pypy-3.9, pypy-3.10, graalpy-24.1 - architectures: amd64
+tested on recent linux with python 3.8, 3.9, 3.10, 3.11, 3.12, pypy-3.9, pypy-3.10 - architectures: amd64
 
 `100% code coverage <https://codeclimate.com/github/bitranox/security_dependency_pinning/test_coverage>`_, flake8 style checking ,mypy static type checking ,tested under `Linux, macOS, Windows <https://github.com/bitranox/security_dependency_pinning/actions/workflows/python-package.yml>`_, automatic daily builds and monitoring
 
 ----
 
-- `Try it Online`_
 - `Usage`_
 - `Usage from Commandline`_
 - `Installation and Upgrade`_
@@ -108,11 +107,7 @@ tested on recent linux with python 3.8, 3.9, 3.10, 3.11, 3.12, pypy-3.9, pypy-3.
 
 ----
 
-Try it Online
--------------
 
-You might try it right away in Jupyter Notebook by using the "launch binder" badge, or click `here <https://mybinder.org/v2/gh/{{rst_include.
-repository_slug}}/master?filepath=security_dependency_pinning.ipynb>`_
 
 Usage
 -----------
@@ -126,17 +121,15 @@ Incorporate the ``security_dependency_pinning`` library into your project's requ
     toml
     ## security pinnings
     # not directly required, pinned to avoid vulnerability CVE-2023-37920
-    certifi[security]>=2024.2.2
+    certifi>=2024.2.2
     # not directly required, pinned to avoid vulnerability CVE-2023-5752
-    pip[security]>=24.0
+    pip>=24.0
     # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
-    urllib3[security]>=2.2.0
+    urllib3>=2.2.0
     # not directly required, pinned to avoid vulnerability CVE-2023-27522
-    # uwsgi not available on windows
-    # uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi[security]>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation == 'CPython'
-    # not directly required, pinned to avoid vulnerability CVE-2023-27522
-    zipp[security]>=3.19.1
+    uwsgi>=2.0.21 ; sys_platform != 'win32'
+    # not directly required, pinned to avoid vulnerability CVE-2024-5569
+    zipp>=3.19.1
     # not directly required, pinned to avoid Always-Incorrect Control Flow Implementation
     requests[security]>=2.32.0
 
@@ -246,17 +239,15 @@ following modules will be automatically installed :
     toml
     ## security pinnings
     # not directly required, pinned to avoid vulnerability CVE-2023-37920
-    certifi[security]>=2024.2.2
+    certifi>=2024.2.2
     # not directly required, pinned to avoid vulnerability CVE-2023-5752
-    pip[security]>=24.0
+    pip>=24.0
     # not directly required, pinned to avoid vulnerability CVE-2023-43804, CVE-2023-45803
-    urllib3[security]>=2.2.0
+    urllib3>=2.2.0
     # not directly required, pinned to avoid vulnerability CVE-2023-27522
-    # uwsgi not available on windows
-    # uwsgi not available on graalpy (reports python 3.11 for graalpy 24.1 )
-    uwsgi[security]>=2.0.21 ; sys_platform != 'win32' and platform_python_implementation == 'CPython'
-    # not directly required, pinned to avoid vulnerability CVE-2023-27522
-    zipp[security]>=3.19.1
+    uwsgi>=2.0.21 ; sys_platform != 'win32'
+    # not directly required, pinned to avoid vulnerability CVE-2024-5569
+    zipp>=3.19.1
     # not directly required, pinned to avoid Always-Incorrect Control Flow Implementation
     requests[security]>=2.32.0
 
@@ -288,12 +279,11 @@ Changelog
 v1.0.1
 --------
 2024-10-01:
-    - do not import uwsgi on windows and platform implementations other then cpython, for graalpy 24.1 and jupyter
     - zipp>=3.19.1
     - requests>=2.32.0
-    - add graalpy tests
     - setup python@v5
     - codecov token
+    - graalpy and jupyter is not supported because of uwsgi pinning
 
 v1.0.0
 --------
