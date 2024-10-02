@@ -8,7 +8,7 @@ Changelog
 v1.0.1
 --------
 2024-10-01:
-    - do not import uwsgi on python3.11 because of graalpy 24.1 tests
+    - do not import uwsgi on windows and platform implementations other then cpython, for graalpy 24.1 and jupyter
     - add graalpy tests
     - setup python@v5
 
