@@ -1,6 +1,7 @@
 # Changelog
 
-## [1.0.3] - 2025-10-31
+## [2.0.0] - 2025-10-31
+    python >=3.13
     certifi>=2024.2.2
     pip>=25.3
     requests[security]>=2.32.4
