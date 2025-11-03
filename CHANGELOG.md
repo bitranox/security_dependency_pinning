@@ -3,7 +3,7 @@
 ## [2.0.0] - 2025-10-31
     python >=3.13
     certifi>=2024.2.2
-    pip>=25.3
+    pygments>=2.7.4
     requests[security]>=2.32.4
     urllib3>=2.5.0
     uwsgi>=2.0.21 ; sys_platform != 'win32'

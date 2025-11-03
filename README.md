@@ -45,6 +45,7 @@ Pinning
 
 by including this repo as dependency, following libraries will be pinned :  
  - certifi>=2024.2.2
+ - pygments>=2.7.4,
  - requests[security]>=2.32.4
  - urllib3>=2.5.0
  - uwsgi>=2.0.21 ; sys_platform != 'win32'
