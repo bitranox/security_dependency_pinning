@@ -24,7 +24,7 @@ name = "security_dependency_pinning"
 #: Human-readable summary shown in CLI help output.
 title = "A repository dedicated to maintaining a secure, stable environment by pinning critical library versions to protect against vulnerabilities and ensure compatibility."
 #: Current release version pulled from ``pyproject.toml`` by automation.
-version = "2.0.0"
+version = "2.0.1"
 #: Repository homepage presented to users.
 homepage = "https://github.com/bitranox/security_dependency_pinning"
 #: Author attribution surfaced in CLI output.

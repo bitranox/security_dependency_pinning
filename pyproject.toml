@@ -1,6 +1,6 @@
 [project]
 name = "security_dependency_pinning"
-version = "2.0.0"
+version = "2.0.1"
 description = "A repository dedicated to maintaining a secure, stable environment by pinning critical library versions to protect against vulnerabilities and ensure compatibility."
 readme = "README.md"
 requires-python = ">=3.13"
