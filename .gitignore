@@ -30,7 +30,7 @@ pnpm-debug.log*
 todo.md
 tmp_*
 .claude/
-.devcontainer/
+# .devcontainer/ # needed for github codespaces
 
 # ====================================
 # IDEs & Editors
