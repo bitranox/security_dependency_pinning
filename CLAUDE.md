@@ -18,10 +18,10 @@ When working with Bash scripts:
 When working with Python code:
 - `core_programming_solid.md`
 - `python_solid_architecture_enforcer.md`
-- use skill `python_clean_architecture`
+- use skill `bx-python-clean-architecture`
 - `python_clean_code.md`
 - `python_small_functions_style.md`
-- `python_libraries_to_use.md`
+- use skill `bx-python-libraries-to-use`
 - `python_structure_template.md`
 
 ### Additional Guidelines
@@ -131,7 +131,7 @@ This library uses a simple two-layer architecture:
 Import rules (enforced by import-linter):
 - `cli` depends on `behaviors` only (not vice versa)
 
-Apply principles using skill `python_clean_architecture` when designing and implementing features.
+Apply principles use skill `bx-python-clean-architecture` when designing and implementing features.
 
 ## Security & Configuration
 
